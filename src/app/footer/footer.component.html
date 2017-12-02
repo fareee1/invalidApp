@@ -1,12 +1,17 @@
 <footer class="footer">
   <div class="footer-widgets">
+        <div class="d-flex justify-content-center" style="padding-bottom: 20px;">
+                <a class="nav-item nav-link" href="#" routerLink="/main">Početna</a>
+                <a class="nav-item nav-link" href="#" routerLink="/login">Prijava</a>
+                <a class="nav-item nav-link" href="#" routerLink="/login">O projektu</a>
+        </div>
       <div class="container">
           <div class="row"> 
               <div class="col-md-4">  
                   <div class="widget widget_text boxHeight">
                       <h5 class="widget-title">O nama</h5>
                       <div class="textwidget">
-                          <p>Naša ordinacija okuplja vrhunski tim stomatologa i zubotehničara koji su spremni odgovoriti na sve vaše zahtjeve.</p>
+                          <p>Web-stranica koja osobama sa invaliditetom daje informacije o tome koje su škole u BiH prilagođene za njih.</p>
                       </div>
                   </div><!-- /.widget -->      
               </div><!-- /.col-md-4 --> 
@@ -16,29 +21,43 @@
                       <h5 class="widget-title">Kontakt</h5>
                       <div class="textwidget">                               
                           <p>
-                              <i class="fa fa-location-arrow" aria-hidden="true"></i>  Adresa: Alifakovac 5<br>
                               <i class="fa fa-envelope" aria-hidden="true" style="font-size:13px;"></i>  Email: Admin@example.com<br>
-                              <i class="fa fa-phone" aria-hidden="true"></i>  Telefon: +387 33 23 24 25
+                              <i class="fa fa-phone" aria-hidden="true"></i>  Telefon: +387 33 00 00 00
                           </p>
                       </div>
                   </div><!-- /.widget -->      
               </div><!-- /.col-md-4 -->
 
                <div class="col-md-4">  
-                  <div class="widget widget_text boxHeight">                            
-                      <h5 class="widget-title">Radno vrijeme:</h5>
-                      <div class="textwidget">                                
-                          <p>
-                              <i class="fa fa-clock-o" aria-hidden="true"></i> Ponedjeljak - Petak: 09:00 - 17:30 <br>
-                              <i class="fa fa-clock-o" aria-hidden="true"></i> Subota: 09:00 - 12:00 <br>
-                          </p>
-                      </div>
-                  </div><!-- /.widget -
-->      
-              </div><!-- /.col-md-4 -->
-
-          </div><!-- /.row -->    
-      </div><!-- /.container -->
+                  <div class="widget widget_text boxHeight">  
+                        <h5 class="widget-title">Podržite naš rad</h5>
+                        <div class="textwidget">                               
+                                <p>“It's not how much we give but how much love we put into giving.”<br>
+                                        ― Mother Teresa
+                                </p>
+                            </div>                          
+                    <ng-template #content let-c="close" let-d="dismiss">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Donirajte</h4>
+                          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Informacije za uplatu sredstava:<br>
+                                Primalac: Škole za sve<br>
+                                Svrha uplate: Donacija<br>
+                                Žiro račun, broj: 0000000011111111 otvoren u XXX Banka d.d. Mostar</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Zatvori</button>
+                        </div>
+                      </ng-template>
+                      
+                      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Donirajte</button>
+                  </div>
+               </div></div><!-- /.widget -  
+                  <</div><!-- /.container -->
   </div><!-- /.footer-widgets -->   
   </div>         
 </footer> 
@@ -50,7 +69,7 @@
           <div class="col-md-12 text-center">
               <div class="copyright"> 
                   <p>Copyright ©2017  
-                  <a href="" target = "_blank">Faris Bilalagić</a> All Rights Reserved.</p>
+                  <a href="" target = "_blank">Hackathon Tim 5</a> Sva prava zadrzana.</p>
               </div>                   
           </div><!-- /.col-md-12 -->
       </div><!-- /.row -->

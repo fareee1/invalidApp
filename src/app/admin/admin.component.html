@@ -2,61 +2,82 @@
   <div class="row" style="margin-top: 100px; margin-bottom: 100px;">
     <div class="col-4  ">
       <form class="form-group">
-        <label for="" class="control-label">Dodajte grad:</label>
-        <div class="col-sm-6">
+        <label for="" class="control-label lead">Dodajte grad:</label>
+        <div class="col-4">
           <input type="text" name="" value="" placeholder="Grad">
-          <button type="button" class="btn btn-primary">Dodaj</button>
+         <br> <button type="button" class="btn btn-primary">Dodaj</button>
         </div>
       </form>
     </div>
 
     <div class="col-4">
-        <form class="form-group">
-            <label for="" class="control-label">Unesi nivo obrazovanja:</label>
-            <div class="col-sm-6">
-              <input type="text" name="" value="" placeholder="Obrazovanje">
-              <button type="button" class="btn btn-primary">Dodaj</button>
-            </div>
-          </form>
+      <form class="form-group">
+        <label for="" class="control-label lead">Unesi nivo obrazovanja:</label>
+        <div class="col-4">
+          <input type="text" name="" value="" placeholder="Obrazovanje">
+         <br> <button type="button" class="btn btn-primary">Dodaj</button>
+        </div>
+      </form>
     </div>
 
     <div class="col-4">
-        <form class="form-group">
-            <label for="" class="control-label">Unesi tip invaliditeta:</label>
-            <div class="col-sm-6">
-              <input type="text" name="" value="" placeholder="Invaliditet">
-              <button type="button" class="btn btn-primary">Dodaj</button>
-            </div>
-          </form>
+      <form class="form-group">
+        <label for="" class="control-label lead">Unesi tip invaliditeta:</label>
+        <div class="col-4">
+          <input type="text" name="" value="" placeholder="Invaliditet">
+         <br> <button type="button" class="btn btn-primary">Dodaj</button>
+        </div>
+      </form>
     </div>
 
   </div>
 
 
-  <form class="form-group col-7">
-      <label for="" class="control-label">Dodajte naziv:</label>
-      <div class="col-sm-6">
-        <input type="text" name="" value=""  placeholder="Naziv">
-        <button type="button" class="btn btn-primary" style="">Dodaj</button>
-      </div>
-      <div class="form-group">
-          <label for="comment">Kratke informacije: </label>
-          <textarea class="form-control" rows="3" id="shortInfo"></textarea>
-      </div>
-      <div class="form-group">
-          <label for="comment">Opširne informacije: </label>
-          <textarea class="form-control" rows="5" id="detailedInfo"></textarea>
-      </div>
+  <div>
+    <h4 class="display-3">Dodajte instituciju:</h4>
+  </div>
 
-      <div class="form-group col-8">
-          <label for="gender1" class="control-label">Grad: </label>
-          <div class="col-sm-8">
-          <select class="form-control" id="school">
-            <option></option>
-          </select>    
-                
-            
-          </div>
-        </div>
+  <form class="form-group col-9">
+    <label for="" class="control-label lead">Dodajte naziv:</label>
+    <div class="">
+      <input type="text" name="" value="" placeholder="Naziv">
+    </div>
+    <div class="form-group">
+      <label for="comment" class="lead">Kratke informacije: </label>
+      <textarea class="form-control" rows="3" id="shortInfo"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="comment" class="lead">Opširne informacije: </label>
+      <textarea class="form-control" rows="5" id="detailedInfo"></textarea>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-3">
+        <label for="gender1" class="control-label lead">Grad: </label>
+        <select class="form-control" id="city">
+          <option></option>
+        </select>
+      </div>
+      <div class="form-group col-3">
+        <label class="control-label lead">Nivo obrazovanja: </label>
+        <select class="form-control" id="lvlEdu">
+          <option></option>
+        </select>
+      </div>
+    </div>
+
+    <label for="g" class="control-label lead">Atributi: </label>
+
+    <form>
+    <input type="checkbox" name="favorite1" value="pokretnaRampa"> Pokretna rampa<br>
+    <input type="checkbox" name="favorite2" value="lift"> Lift<br>
+    <input type="checkbox" name="favorite3" value="adekvatnaRasvjeta"> Adekvatna rasvjeta<br>
+    <input type="checkbox" name="favorite3" value="parkingMjesta"> Pristup parking mjestima<br>
+    <input type="checkbox" name="favorite3" value="sanitarniCvor"> Sanitarni čvor prilagođen osobama sa invaliditetom
     </form>
+    <br>
+   <br> <button type="button" class="btn btn-primary mx-auto">Submit</button>
+
+
+  </form>
 </div>

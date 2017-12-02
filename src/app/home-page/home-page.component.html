@@ -1,21 +1,18 @@
-<img src="https://guardian.ng/wp-content/uploads/2016/10/mobility-disabilities_4.jpg" alt="picture" width="100%" height="600">
-<div style="width: 500px; margin: auto; margin-top: 100px; margin-bottom: 100px;">
-  <hr>
-</div>
+<img src="../../assets/s7.jpg" alt="picture" width="100%" height="550">
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3 text-center">Choose your suitable school</h1>
-    <p class="lead text-center">This is an app built for people with disabilites to help them find their perfect school</p>
+    <h1 class="display-3 text-center">Škole za sve</h1>
+    <p class="lead text-center">Web-stranica koja osobama sa invaliditetom daje informacije o tome koje su škole u BiH prilagođene za njih.</p>
   </div>
 </div>
 
 <div class="container">
 <div class="row">
   <div class="col-4">
-  <div class="form-group ">
-    <label for="gender1" class="control-label">Izaberite grad: </label>
-    <div class="col-sm-6">
+  <div class="form-group text-center ">
+    <label for="gender1" class="control-label lead"><i class="fa fa-building-o" aria-hidden="true" style="font-size: 20px; padding-right: 5px;"></i>Izaberite grad: </label>
+    <div>
     <select class="form-control" id="city">
       <option>Sarajevo</option>
       <option>Zenica</option>
@@ -28,9 +25,9 @@
 </div>
 
 <div class="col-4">
-<div class="form-group">
-  <label for="gender1" class="control-label">Izaberite školu: </label>
-  <div class="col-sm-8">
+<div class="form-group text-center">
+  <label for="gender1" class="control-label lead"><i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 20px; padding-right: 5px;"></i>Izaberite školu: </label>
+  <div>
   <select class="form-control" id="school">
     <option>Primary school</option>
     <option>High school</option>
@@ -42,9 +39,9 @@
 </div>
 
 <div class="col-4">
-<div class="form-group">
-  <label for="gender1" class="control-label">Izaberite invaliditet: </label>
-  <div class="col-sm-6">
+<div class="form-group text-center">
+  <label for="gender1" class="control-label lead"><i class="fa fa-wheelchair" aria-hidden="true" style="font-size: 20px; padding-right: 5px;"></i>Izaberite invaliditet: </label>
+  <div>
   <select class="form-control" id="disability">
     <option>Oštećenja vida i sluha</option>
     <option>Motorički poremećaj</option>
@@ -58,5 +55,35 @@
 </div>
 
 </div>
+
+<div class="bg-light filterContainer">
+  <div class="filterDiv">
+    <label for="gender1" class="control-label lead">Filteri: </label><br>
+    <form>
+        <div class="checkbox">
+          <label><input type="checkbox">Prostorna pristupačnost</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox">Pokretna rampa</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox">Lift</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox">Adekvatna rasvjeta</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox">Pristup parking mjestima</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox">Prilagođeni sanitarni čvor</label>
+        </div>
+      </form>
+  </div>
+  <div class="resultDiv">
+
+  </div>
+</div>
+
 </div>
 
