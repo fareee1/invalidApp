@@ -98,4 +98,8 @@ footer a{
 	border-left: 1px solid white;
 }
 
+a {
+	cursor: pointer;
+}
+
  
