@@ -78,24 +78,10 @@ footer {
     }
     .footer-widgets .widget {
         width: 100%;
-    }
-}
-
-footer a{
-	display: inline-block;
-	font-family: "Lato", sans-serif;
-	font-size: 17px;
-	line-height: normal;
-	font-weight: 700;
-	color: #fff;
-	position: relative;
-	margin-bottom: 25px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-left: 30px;
-	padding-top: 9px;
-	border-right: 1px solid white;
-	border-left: 1px solid white;
+	}
+	ng-template {
+		width: 300px;
+	}
 }
 
 a {

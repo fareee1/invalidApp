@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { PrijaviProblemComponent } from './prijavi-problem/prijavi-problem.component';
+import { OProjektuComponent } from './o-projektu/o-projektu.component';
 
 
 
@@ -19,6 +21,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
 
   { path: 'admin', component: AdminComponent},
+
+  { path: 'problem', component: PrijaviProblemComponent},
+
+  { path: 'oprojektu', component: OProjektuComponent},
   
   { path: '**', component: HomePageComponent}
 ];
@@ -30,7 +36,9 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    PrijaviProblemComponent,
+    OProjektuComponent
   ],
   imports: [
     BrowserModule,

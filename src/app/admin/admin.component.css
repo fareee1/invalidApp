@@ -5,3 +5,22 @@ button{
 label{
     margin-top: 10px;
 }
+
+@media (max-width: 650px) {
+    .row {
+        display: block;
+    }
+    .col-4{
+        margin-top: 25px;
+    }
+    hr{
+        width: 300px;
+        margin-right: 150px;
+    }
+    select{
+        width: 200px;
+    }
+    .row label, .row select {
+        width: 350px;
+    }
+}
